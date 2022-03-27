@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@color/primary_grey">
+
+    <TextView
+        android:id="@+id/registerHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cadastro"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:background="@drawable/rounded_header"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/emailRegister"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/registerHeader"
+        android:layout_marginTop="100dp"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:fontFamily="@font/robo_light"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        />
+
+    <EditText
+        android:id="@+id/passwordRegister"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/emailRegister"
+        android:layout_marginTop="60dp"
+        android:hint="@string/senha"
+        android:fontFamily="@font/robo_light"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:id="@+id/buttonRegisterConcluir"
+        android:layout_below="@+id/passwordRegister"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/concluir"
+        android:fontFamily="@font/roboto_medium"
+        android:textAllCaps="false"
+        android:textSize="18sp"/>
+
+</RelativeLayout>

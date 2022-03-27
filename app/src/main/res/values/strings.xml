@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">FluxoLogin</string>
+    <string name="esqueceu_a_senha"><u>Esqueci senha</u></string>
+    <string name="login">Login</string>
+    <string name="usu_rio">Usuário</string>
+    <string name="senha">Senha</string>
+    <string name="registrar">Registrar</string>
+    <string name="email">E-mail</string>
+    <string name="concluir">Concluir</string>
+    <string name="cadastro">Cadastro</string>
+    <string name="insira_o_e_mail_cadastrado_para_nenvio_das_instru_es">Insira o e-mail cadastrado para \nenvio das instruções.</string>
+    <string name="prosseguir">Prosseguir</string>
+    <string name="esqueci_senha">Esqueci Senha</string>
+    <string name="bem_vindo_a">Bem vindo(a)!</string>
 </resources>

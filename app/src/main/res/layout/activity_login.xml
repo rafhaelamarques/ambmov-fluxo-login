@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/primary_grey">
+
+    <TextView
+        android:id="@+id/loginHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:background="@drawable/rounded_header"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/emailLogin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/loginHeader"
+        android:layout_marginTop="100dp"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:fontFamily="@font/robo_light"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        />
+
+    <EditText
+        android:id="@+id/passwordLogin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/emailLogin"
+        android:layout_marginTop="60dp"
+        android:hint="@string/senha"
+        android:fontFamily="@font/robo_light"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:inputType="textPassword"
+        />
+
+    <TextView
+        android:id="@+id/esqueciSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordLogin"
+        android:layout_marginTop="20dp"
+        android:text="@string/esqueceu_a_senha"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/primary_purple"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="30dp" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_below="@+id/esqueciSenha"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/login"
+        android:fontFamily="@font/roboto_medium"
+        android:textAllCaps="false"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_below="@+id/buttonLogin"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_button_2"
+        android:text="@string/registrar"
+        android:fontFamily="@font/roboto_medium"
+        android:textAllCaps="false"
+        android:textSize="18sp"/>
+
+</RelativeLayout>
